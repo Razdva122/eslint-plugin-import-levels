@@ -4,7 +4,7 @@
 
 import { RuleTester, Linter } from 'eslint';
 
-import { rule } from '../index';
+const { rules } = require('../index');
 
 //------------------------------------------------------------------------------
 // Tests
@@ -104,7 +104,7 @@ const invalidImportFromNestedLevels: RuleTester.InvalidTestCase = {
 }
 
 const ruleTester = new RuleTester();
-ruleTester.run("import from wrong level", rule, {
+ruleTester.run("import from wrong level", rules['warn-import-from-wrong-level'], {
 
     valid: [
       fileNotInSrcPath,

@@ -9,11 +9,12 @@ const forbiddenImports: { [key in TLevel]: TLevel[] } = {
   desktop: ['mobile'],
 };
 
-export const rule: Rule.RuleModule = {
+const rule: Rule.RuleModule = {
   meta: {
     type: 'suggestion',
     docs: {
       description: 'Prohibited import from wrong level',
+      url: 'https://github.com/Razdva122/linter-import-levels',
     }
   },
   create: function(context) {
@@ -56,3 +57,8 @@ export const rule: Rule.RuleModule = {
   }
 }
 
+module.exports = {
+  rules: {
+    'warn-import-from-wrong-level': rule
+  }
+}
