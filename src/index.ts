@@ -59,6 +59,6 @@ const rule: Rule.RuleModule = {
 
 module.exports = {
   rules: {
-    'warn-import-from-wrong-level': rule
+    'import-levels': rule
   }
 }
