@@ -1,5 +1,5 @@
 {
-  "name": "lint-typescript",
+  "name": "eslint-plugin-import-levels",
   "version": "1.0.0",
   "description": "Linter warning when importing from the wrong level",
   "main": "src/index.ts",
@@ -7,7 +7,7 @@
     "start": "ts-node src/index.ts",
     "test": "mocha -r ts-node/register src/test/**/*.ts"
   },
-  "keywords": [],
+  "keywords": ["eslint", "eslintplugin"],
   "author": "RazDva122",
   "license": "ISC",
   "devDependencies": {
